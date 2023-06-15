@@ -6,6 +6,7 @@
 
 .header-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -28,14 +29,60 @@
 }
 
 .logo-margin {
-    margin-right: 93px;
+    margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+    .logo-margin {
+        margin-right: 93px;
+    }
 }
 
-.navigation-list {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+// Було
+// .navigation-list {
+//     display: flex;
+//     align-items: center;
+//     margin-left: auto;
+// }
+
+.mobile-menu-btn {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: transparent;
+    background-color: lime;
 }
+.mobile-menu-btn__icon {
+    display: block;   
+}
+// Стало
+.navigation-list,
+.navigation-list-contact {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .navigation-list {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+    .mobile-menu-btn {
+        display: none;
+    }
+
+    .navigation-list-contact {
+        display: block;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .navigation-list-contact {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+}
+
+
+
 
 .nav-list-item:not(:last-child) {
     margin-right: 50px;
