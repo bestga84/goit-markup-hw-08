@@ -32,7 +32,6 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  background-color: yellow;
 }
 
 @media screen and (min-width: 480px) {
@@ -40,19 +39,16 @@
     width: 480px;
     margin-left: auto;
     margin-right: auto;
-    background-color: orange;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: lime;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    background-color: aqua;
   }
 }
 .section {
@@ -505,6 +501,13 @@ ol {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 .logo,
 .logo-part {
   font-family: var(--second-font);
@@ -537,7 +540,6 @@ ol {
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
-  background-color: lime;
 }
 
 .mobile-menu-btn__icon {
@@ -560,6 +562,10 @@ ol {
   }
   .navigation-list-contact {
     display: block;
+    margin-left: auto;
+  }
+  .nav-right {
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -567,6 +573,9 @@ ol {
     display: flex;
     align-items: center;
     margin-left: auto;
+  }
+  .nav-right {
+    margin-top: 0;
   }
 }
 .nav-list-item:not(:last-child) {
@@ -609,13 +618,14 @@ ol {
   color: var(--primary-color-font);
 }
 
-.mail-tel-text {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+@media screen and (min-width: 1200px) {
+  .mail-tel-text {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
-
 .nav-text,
 .mail-tel-text {
   font-weight: 500;
@@ -631,18 +641,18 @@ ol {
 }
 
 /* ==== Іконка в навігації ====  */
-.nav-right {
-  margin-left: 40px;
-}
-
 .mail-tel-text {
   color: var(--paragraph-color-font);
 }
 
-.contact-number {
-  margin-left: 0;
+@media screen and (min-width: 1200px) {
+  .nav-right {
+    margin-left: 40px;
+  }
+  .contact-number {
+    margin-left: 0;
+  }
 }
-
 .hero-color-bg {
   max-width: 1600px;
   max-height: 600px;

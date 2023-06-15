@@ -9,6 +9,13 @@
     justify-content: space-between;
     align-items: center;
 }
+@media screen and (min-width: 768px) {
+    .header-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
 
 .logo,
 .logo-part {
@@ -49,7 +56,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border: none;
-    background-color: lime;
+    // background-color: lime;
 }
 .mobile-menu-btn__icon {
     display: block;   
@@ -71,6 +78,10 @@
 
     .navigation-list-contact {
         display: block;
+        margin-left: auto;
+    }
+    .nav-right {
+        margin-top: 10px;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -78,6 +89,9 @@
         display: flex;
         align-items: center;
         margin-left: auto;
+    }
+    .nav-right {
+        margin-top: 0;
     }
 }
 
@@ -129,11 +143,13 @@
     color: var(--primary-color-font);
 }
 
-.mail-tel-text {
-    display: flex;
-    align-items:center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+@media screen and (min-width: 1200px) {
+    .mail-tel-text {
+        display: flex;
+        align-items:center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 
 .nav-text,
@@ -152,14 +168,16 @@
 }
 /* ==== Іконка в навігації ====  */
 
-.nav-right {
-    margin-left: 40px;
-}
 
 .mail-tel-text {
     color: var(--paragraph-color-font);
 }
 
-.contact-number {
-    margin-left: 0;
+@media screen and (min-width: 1200px) {
+    .nav-right {
+        margin-left: 40px;
+    }
+    .contact-number {
+        margin-left: 0;
+    }
 }
