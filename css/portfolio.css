@@ -343,6 +343,11 @@ ol {
   background-color: var(--hero-color-font);
 }
 
+.header-bg-color {
+  border-bottom: 1px solid #ECECEC;
+  background-color: var(--hero-color-font);
+}
+
 .header-container {
   display: flex;
   align-items: center;
