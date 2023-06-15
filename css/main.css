@@ -536,7 +536,7 @@ ol {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-color: transparent;
+  border: none;
   background-color: lime;
 }
 
