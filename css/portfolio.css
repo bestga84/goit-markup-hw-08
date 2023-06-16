@@ -34,6 +34,11 @@
   padding-right: 15px;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -50,12 +55,11 @@
   .container {
     width: 1200px;
   }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .body {
   color: var(--primary-color-font);
   font-family: var(--primary-font);
