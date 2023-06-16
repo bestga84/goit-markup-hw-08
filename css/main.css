@@ -93,26 +93,39 @@ ol {
 
 .hero-text {
   font-weight: 900;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.hero-align {
+  margin-bottom: 30px;
+  max-width: 360px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-text {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-text {
+    font-size: 26px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-text {
     font-size: 44px;
     line-height: 1.36;
   }
+  .hero-align {
+    max-width: 696px;
+  }
 }
-.hero-align {
-  margin-bottom: 30px;
-  max-width: 680px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .hero-btn {
   background-color: var(--second-color-font);
   font-weight: 700;
@@ -507,6 +520,13 @@ ol {
   align-items: center;
 }
 
+@media screen and (min-width: 480px) {
+  .header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-container {
     display: flex;
@@ -801,12 +821,24 @@ ol {
   color: var(--second-color-font);
 }
 
+.hero-title {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero-color-bg {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile.jpg);
   background-color: var(--hero-footer-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.hero-padding {
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 @media screen and (min-width: 480px) {
@@ -831,19 +863,11 @@ ol {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
     background-size: 1600px 600px;
   }
+  .hero-padding {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
-.hero-title {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-padding {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 .section-about {
   padding-top: 94px;
   background-color: var(--hero-color-font);

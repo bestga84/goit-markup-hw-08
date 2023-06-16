@@ -93,26 +93,39 @@ ol {
 
 .hero-text {
   font-weight: 900;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.hero-align {
+  margin-bottom: 30px;
+  max-width: 360px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-text {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-text {
+    font-size: 26px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-text {
     font-size: 44px;
     line-height: 1.36;
   }
+  .hero-align {
+    max-width: 696px;
+  }
 }
-.hero-align {
-  margin-bottom: 30px;
-  max-width: 680px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .btn-flex-portfolio {
   display: flex;
   justify-content: center;
@@ -369,6 +382,13 @@ ol {
   align-items: center;
 }
 
+@media screen and (min-width: 480px) {
+  .header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-container {
     display: flex;
