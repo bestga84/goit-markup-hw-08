@@ -895,6 +895,12 @@ ol {
 .section-about__item {
   max-width: 450px;
 }
+.section-about__item:not(:last-child) {
+  padding-bottom: 30px;
+}
+.section-about__item:last-child {
+  padding-bottom: 60px;
+}
 
 .section-about__icon {
   display: flex;

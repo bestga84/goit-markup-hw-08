@@ -5,10 +5,21 @@
 
 .section-about__list {
     display: block;
+
+
 }
+
 
 .section-about__item {
     max-width: 450px;
+
+    &:not(:last-child) {
+        padding-bottom: 30px;
+    }
+
+    &:last-child {
+        padding-bottom: 60px;
+    }
 }
 
 .section-about__icon {   
@@ -48,7 +59,11 @@
     letter-spacing: 0.03em;
 
     color: var(--paragraph-color-font);
+
+
+    
 }
+
 
 @media screen and (min-width: 480px) {
     .section-about__item {
