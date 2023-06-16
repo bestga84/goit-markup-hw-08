@@ -50,7 +50,8 @@
     }
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),  (-webkit-min-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-color-bg {
         @media screen and (min-width: 480px) {
             background-image: url('../images/hero/hero-mobile@2x.jpg');
