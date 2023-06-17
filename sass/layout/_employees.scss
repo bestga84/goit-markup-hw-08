@@ -6,10 +6,6 @@
     display: block;
 }
 
-.person-img {
-    width: 450px;
-    height: 460px;
-}
 
 // .team-location > 
 .person-location {
@@ -29,7 +25,8 @@
 .person-img {
     display: block;
     padding-bottom: 0;
-    max-width: 450px;
+    max-width: 100%;
+    height: auto;
 }
 
 .card-content {
