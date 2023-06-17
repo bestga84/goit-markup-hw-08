@@ -2,15 +2,23 @@
     background-color: var(--hero-footer-color);
 }
 
-.footer-padding {
+.footer-address {
     padding-top: 60px;
+    padding-right: (124px - 15px);
     padding-bottom: 60px;
+    padding-left: (124px - 15px);
+    text-align: center;
 }
 
-.container-footer {
-    display: flex;
-    align-items: baseline;
-}
+// .footer-padding {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+// }
+
+// .container-footer {
+//     display: flex;
+//     align-items: baseline;
+// }
 
 .logo-second,
 .text-addres {
@@ -22,9 +30,9 @@
     margin-bottom: 28px;
 }
 
-.footer-address-width {
-    margin-right: 25px;
-}
+// .footer-address-width {
+//     margin-right: 25px;
+// }
 
 .text-addres,
 .mail-tel-footer {
@@ -35,16 +43,20 @@
     letter-spacing: 0.03em;
 }
 
-.mail-tel {
-    margin-top: 12px;
-}
+// .mail-tel {
+//     margin-top: 12px;
+// }
 
 .mail-tel-footer {
     color: var(--footer-color-font);
 }
 
 .margin-footer {
-    margin-left: auto;
+    padding-right: (137px - 15px);
+    padding-bottom: 60px;
+    padding-left: (137px - 15px);
+    text-align: center;
+    // margin-left: auto;
 }
 
 .footer-add {
@@ -58,3 +70,117 @@
 
     margin-bottom: 20px;
 }
+
+.margin-footer-form {
+    display: block;
+    width: 100%;
+    padding-bottom: 60px;
+
+    text-align: center;
+}
+
+// .form-signup-input-footer {
+//     display: block;
+//     align-items: center;
+//     width: 358px;
+//     height: 50px;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     border-radius: 4px;
+//     padding-left: 16px;
+//     background-color: transparent;
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.25;
+//     letter-spacing: 0.03em;
+//     color: rgba(255, 255, 255, 0.6);
+//     margin-right: 12px;
+  }
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    .footer-address {
+        padding-right: (76px - 15px);
+        padding-left: 165px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-address {
+        padding-right: 94px;
+        padding-left: 215px;
+    }
+}
+
+
+
+
+
+
+
+
+// ================================================
+// Було
+
+// .footer-color {
+//     background-color: var(--hero-footer-color);
+// }
+
+// .footer-padding {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+// }
+
+// .container-footer {
+//     display: flex;
+//     align-items: baseline;
+// }
+
+// .logo-second,
+// .text-addres {
+//     color: var(--hero-color-font);
+// }
+
+// .logo-footer {
+//     display: inline-block;
+//     margin-bottom: 28px;
+// }
+
+// .footer-address-width {
+//     margin-right: 25px;
+// }
+
+// .text-addres,
+// .mail-tel-footer {
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+// }
+
+// .mail-tel {
+//     margin-top: 12px;
+// }
+
+// .mail-tel-footer {
+//     color: var(--footer-color-font);
+// }
+
+// .margin-footer {
+//     margin-left: auto;
+// }
+
+// .footer-add {
+//     font-family: var(--primary-font);
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: var(--hero-color-font);
+
+//     margin-bottom: 20px;
+// }

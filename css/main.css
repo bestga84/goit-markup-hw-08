@@ -1218,14 +1218,12 @@ ol {
   background-color: var(--hero-footer-color);
 }
 
-.footer-padding {
+.footer-address {
   padding-top: 60px;
+  padding-right: 109px;
   padding-bottom: 60px;
-}
-
-.container-footer {
-  display: flex;
-  align-items: baseline;
+  padding-left: 109px;
+  text-align: center;
 }
 
 .logo-second,
@@ -1238,10 +1236,6 @@ ol {
   margin-bottom: 28px;
 }
 
-.footer-address-width {
-  margin-right: 25px;
-}
-
 .text-addres,
 .mail-tel-footer {
   font-style: normal;
@@ -1251,16 +1245,15 @@ ol {
   letter-spacing: 0.03em;
 }
 
-.mail-tel {
-  margin-top: 12px;
-}
-
 .mail-tel-footer {
   color: var(--footer-color-font);
 }
 
 .margin-footer {
-  margin-left: auto;
+  padding-right: 122px;
+  padding-bottom: 60px;
+  padding-left: 122px;
+  text-align: center;
 }
 
 .footer-add {
@@ -1274,6 +1267,31 @@ ol {
   margin-bottom: 20px;
 }
 
+.margin-footer-form {
+  display: block;
+  width: 100%;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.form-signup-input-footer {
+  display: block;
+  align-items: center;
+  width: 358px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-address {
+    padding-right: 61px;
+    padding-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    padding-right: 94px;
+    padding-left: 215px;
+  }
+}
 body {
   background-color: yellow;
 }/*# sourceMappingURL=main.css.map */
