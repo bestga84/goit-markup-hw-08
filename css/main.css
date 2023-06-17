@@ -1212,10 +1212,6 @@ ol {
   padding-top: 60px;
 }
 
-.margin-footer-form {
-  padding-top: 60px;
-}
-
 .logo-second,
 .text-addres {
   color: var(--hero-color-font);
@@ -1257,6 +1253,7 @@ ol {
 .margin-footer-form {
   display: block;
   width: 100%;
+  padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
 }
@@ -1275,7 +1272,8 @@ ol {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -1289,22 +1287,46 @@ ol {
     justify-content: space-between;
   }
   .footer-address {
-    margin-left: 61px;
     width: 232px;
+    margin-left: 61px;
   }
   .margin-footer {
     padding-top: 65px;
     margin-right: 74px;
-  }
-  .form-signup-footer__input {
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-address {
-    padding-right: 94px;
-    padding-left: 215px;
+    padding-left: 0;
+    padding-bottom: 60px;
+    margin-left: 0;
+    margin-right: 94px;
+    text-align: left;
+  }
+  .container-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .margin-footer {
+    padding-top: 72px;
+  }
+  .margin-footer-form {
+    padding-top: 72px;
+    text-align: left;
+    width: 570px;
+  }
+  .form-signup-footer {
+    display: flex;
+  }
+  .form-signup-footer__input {
+    width: 358px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .form-signup-footer__btn {
+    outline: none;
+    margin: 0 0 0 12px;
   }
 }
 body {
