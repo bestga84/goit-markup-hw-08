@@ -465,34 +465,12 @@ ol {
 }
 
 /* ==== Початок підписання в футері ==== */
-.form-signup {
+.form-signup-footer__btn {
   display: flex;
-}
-
-.form-signup-input {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  padding-left: 16px;
-  background-color: transparent;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  margin-right: 12px;
-}
-
-.form-signup-btn {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  max-width: 200px;
+  min-width: 200px;
   min-height: 50px;
-  padding: 10px 62px 10px 28px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -503,12 +481,15 @@ ol {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-signup-icon {
   min-width: 24px;
   min-height: 24px;
-  margin-left: 10px;
+  margin-left: 25px;
 }
 
 /* ==== Кінець підписання в футері ==== */
@@ -1218,12 +1199,21 @@ ol {
   background-color: var(--hero-footer-color);
 }
 
+.footer-address-social {
+  text-align: center;
+}
+
 .footer-address {
   padding-top: 60px;
-  padding-right: 109px;
-  padding-bottom: 60px;
-  padding-left: 109px;
-  text-align: center;
+  margin-bottom: 0;
+}
+
+.margin-footer {
+  padding-top: 60px;
+}
+
+.margin-footer-form {
+  padding-top: 60px;
 }
 
 .logo-second,
@@ -1250,9 +1240,6 @@ ol {
 }
 
 .margin-footer {
-  padding-right: 122px;
-  padding-bottom: 60px;
-  padding-left: 122px;
   text-align: center;
 }
 
@@ -1274,16 +1261,44 @@ ol {
   text-align: center;
 }
 
-.form-signup-input-footer {
+.form-signup-footer__input {
   display: block;
   align-items: center;
-  width: 358px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 12px;
 }
 
+@media screen and (min-width: 480px) {
+  .form-signup-footer__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
+  .footer-address-social {
+    display: flex;
+    justify-content: space-between;
+  }
   .footer-address {
-    padding-right: 61px;
-    padding-left: 165px;
+    margin-left: 61px;
+    width: 232px;
+  }
+  .margin-footer {
+    padding-top: 65px;
+    margin-right: 74px;
+  }
+  .form-signup-footer__input {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
