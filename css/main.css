@@ -162,7 +162,6 @@ ol {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
 
 /* ===== Соц.мережі команди ===== */
@@ -1048,7 +1047,7 @@ ol {
 }
 
 .person-location {
-  margin-top: 0px;
+  margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -1111,8 +1110,8 @@ ol {
   .person-location:not(:nth-child(2n+1)) {
     margin-left: 30px;
   }
-  .person-location:nth-child(n+3) {
-    margin-top: 30px;
+  .person-location:nth-child(n+1) {
+    margin-bottom: 0;
   }
   .person-img {
     width: 354px;
@@ -1123,11 +1122,11 @@ ol {
   .person-location {
     flex-basis: calc((100% - 90px) / 4);
   }
+  .person-location:nth-child(-n+4) {
+    margin-top: 50px;
+  }
   .person-location:not(:nth-child(4n+1)) {
     margin-left: 30px;
-  }
-  .person-location:nth-child(n+5) {
-    margin-top: 30px;
   }
   .person-img {
     width: 270px;

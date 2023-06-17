@@ -13,7 +13,7 @@
 
 // .team-location > 
 .person-location {
-    margin-top: 0px;
+    margin-top: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -75,19 +75,16 @@
         flex-wrap: wrap;
     }
 
-    // .team-location > 
     .person-location {
         flex-basis: calc((100% - 30px*1) / 2);
     }
 
-    // .team-location > 
     .person-location:not(:nth-child(2n+1)) {
         margin-left: 30px;
     }
 
-    // .team-location > 
-    .person-location:nth-child(n + 3) {
-        margin-top: 30px;
+    .person-location:nth-child(n + 1) {
+        margin-bottom: 0;
     }
 
     .person-img {
@@ -96,30 +93,25 @@
     }
 }
 
+
 @media screen and (min-width: 1200px) {
-    // .team-location > 
+
     .person-location {
         flex-basis: calc((100% - 30px*3) / 4);
     }
 
-    // .team-location > 
-    .person-location:not(:nth-child(4n+1)) {
-        margin-left: 30px;
+    .person-location:nth-child(-n + 4) {
+        margin-top: 50px;
     }
 
-    // .team-location > 
-    .person-location:nth-child(n + 5) {
-        margin-top: 30px;
+    .person-location:not(:nth-child(4n+1)) {
+        margin-left: 30px;
     }
 
     .person-img {
         width: 270px;
         height: 260px;
     }
-
-    // .card-content {
-    //     padding-bottom: 30px;
-    // }
 }
 
 
