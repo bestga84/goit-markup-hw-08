@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Студія</title>
+    <title>Studio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/portfolio.min.css">
@@ -24,13 +24,13 @@
             <nav>
                 <ul class="list navigation-list">
                     <li class="nav-list-item">
-                        <a href="./index.html" class="link nav-list-link nav-base-text nav-text">Студія</a>
+                        <a href="./index.html" class="link nav-list-link nav-base-text nav-text">Studio</a>
                     </li>
                     <li class="nav-list-item">
-                        <a href="./portfolio.html" class="link nav-list-link nav-base-text current menu-link">Портфоліо</a>
+                        <a href="./portfolio.html" class="link nav-list-link nav-base-text current menu-link">Portfolio</a>
                     </li>
                     <li class="nav-list-item">
-                        <a href="" class="link nav-list-link nav-base-text nav-text">Контакти</a>
+                        <a href="" class="link nav-list-link nav-base-text nav-text">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -53,29 +53,84 @@
                 </li>
             </ul>     
         </div>
+
+        <!-- Мобільне меню -->
+        <div class="mobile-menu container js-menu-container" js-menu-container>
+            <button type="button" class="mobile-menu-btn mobile-menu-btn-close js-close-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu" js-close-menu>
+                <svg class="mobile-menu-btn__icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu__container">
+                <nav class="mobile-menu__nav">
+                    <ul class="list mobile-menu__list">
+                        <li class="mobile-menu__nav-item">
+                            <a href="./index.html" class="link nav-list-link mobile-menu__nav-text current">Studio</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="./portfolio.html" class="link nav-list-link mobile-menu__nav-text nav-text">Portfolio</a>
+                        </li>
+                        <li class="nav-list-item2">
+                            <a href="" class="link nav-list-link mobile-menu__nav-text nav-text">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <ul class="list mobile-menu__contact">
+                    <li class="mobile-menu__contact-item">
+                        <a href="tel:+12127724150" class="link mobile-menu__contact-tel nav-list-link2 mail-tel-text2 contact-number2">
+                            +1 212-772-4150
+                        </a>
+                    </li>
+                    <li class="mobile-menu__contact-item">
+                        <a href="mailto:info@devstudio.com" class="link mobile-menu__contact-mail nav-list-link2 mail-tel-text2">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="list mobile-menu__social">
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="link mobile-menu__social-link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="link mobile-menu__social-link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="link mobile-menu__social-link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="link mobile-menu__social-link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>           
+        </div>
+
     </header>
 
 
     <main class="portfolio-bg-color">
-        <h1 class="visually-hidden">Портфоліо</h1> <!--Цей заголовок сховати-->
+        <h1 class="visually-hidden">Portfolio</h1> <!--Цей заголовок сховати-->
         <section class="section">
             <div class="container">
                 <div class="container-btn">
                     <ul class="list btn-flex-portfolio">
                         <li class="btn-item-portfolio">
-                            <button type="button" class="portfolio-btn">Усі</button>
+                            <button type="button" class="portfolio-btn">All</button>
                         </li>
                         <li class="btn-item-portfolio">
-                            <button type="button" class="portfolio-btn">Веб-сайти</button>
+                            <button type="button" class="portfolio-btn">Web-sites</button>
                         </li>
                         <li class="btn-item-portfolio">
-                            <button type="button" class="portfolio-btn">Додатки</button>
+                            <button type="button" class="portfolio-btn">Apps</button>
                         </li>
                         <li class="btn-item-portfolio">
-                            <button type="button" class="portfolio-btn">Дизайн</button>
+                            <button type="button" class="portfolio-btn">Design</button>
                         </li>
                         <li class="btn-item-portfolio">
-                            <button type="button" class="portfolio-btn">Маркетинг</button>
+                            <button type="button" class="portfolio-btn">Marketing</button>
                         </li>
                     </ul>
                 </div>
@@ -124,12 +179,12 @@
                                 <!-- <img class="portfolio-img" src="./images/portfolio/portfolio1.jpg" alt="Технокряк"> -->
 
                                 <div class="portfolio-img-thumb-discr">
-                                    <p class="portfolio-descr-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                    <p class="portfolio-descr-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                                 </div>
                             </div>
                             <div class="card-portfolio">
-                                <h2 class="portfolio-names link">Технокряк</h2>
-                                <p class="portfolio-discr">Веб-сайт</p>
+                                <h2 class="portfolio-names link">Technoduck</h2>
+                                <p class="portfolio-discr">Website</p>
                             </div>
                         </a>
                     </li>
@@ -176,12 +231,12 @@
 
                                 <!-- <img class="portfolio-img" src="./images/portfolio/portfolio2.jpg" alt="Постер New Orlean vs Golden Star"> -->
                                 <div class="portfolio-img-thumb-discr">
-                                    <p class="portfolio-descr-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                    <p class="portfolio-descr-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                                 </div>
                             </div>
                             <div class="card-portfolio">
-                                <h2 class="portfolio-names link">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                                <p class="portfolio-discr">Дизайн</p>
+                                <h2 class="portfolio-names link">Poster New Orlean vs Golden Star</h2>
+                                <p class="portfolio-discr">Design</p>
                             </div>
                         </a>
                     </li>
@@ -227,12 +282,12 @@
 
                                 <!-- <img class="portfolio-img" src="./images/portfolio/portfolio3.jpg" alt="Ресторан Seafood"> -->
                                 <div class="portfolio-img-thumb-discr">
-                                    <p class="portfolio-descr-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                    <p class="portfolio-descr-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                                 </div>
                             </div>
                             <div class="card-portfolio">
-                                <h2 class="portfolio-names link">Ресторан <span lang="en">Seafood</span></h2>
-                                <p class="portfolio-discr">Додаток</p>
+                                <h2 class="portfolio-names link">Seafood Restaurant </h2>
+                                <p class="portfolio-discr">Apps</p>
                             </div>
                         </a>
                     </li>
@@ -279,12 +334,12 @@
 
                                 <!-- <img class="portfolio-img" src="./images/portfolio/portfolio4.jpg" alt="Проєкт Prime"> -->
                                 <div class="portfolio-img-thumb-discr">
-                                    <p class="portfolio-descr-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                    <p class="portfolio-descr-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                                 </div>
                             </div>
                             <div class="card-portfolio">
-                                <h2 class="portfolio-names">Проєкт <span lang="en">Prime</span></h2>
-                                <p class="portfolio-discr">Маркетинг</p>
+                                <h2 class="portfolio-names">Project Prime</h2>
+                                <p class="portfolio-discr">Marketing</p>
                             </div>
                         </a>
                     </li>
@@ -331,12 +386,12 @@
 
                                 <!-- <img class="portfolio-img" src="./images/portfolio/portfolio5.jpg" alt="Проєкт Boxes"> -->
                                 <div class="portfolio-img-thumb-discr">
-                                    <p class="portfolio-descr-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                    <p class="portfolio-descr-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                                 </div>
                             </div>
                             <div class="card-portfolio">
-                                <h2 class="portfolio-names">Проєкт <span lang="en"> Boxes</span></h2>
-                                <p class="portfolio-discr">Додаток</p>
+                                <h2 class="portfolio-names">Project Boxes</h2>
+                                <p class="portfolio-discr">Apps</p>
                             </div>
                         </a>
                     </li>
@@ -383,12 +438,12 @@
 
                                 <!-- <img class="portfolio-img" src="./images/portfolio/portfolio6.jpg" alt="Inspiration has no Borders"> -->
                                 <div class="portfolio-img-thumb-discr">
-                                    <p class="portfolio-descr-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                    <p class="portfolio-descr-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                                 </div>
                             </div>
                             <div class="card-portfolio">
-                                <h2 class="portfolio-names" lang="en">Inspiration has no Borders</h2>
-                                <p class="portfolio-discr">Веб-сайт</p> 
+                                <h2 class="portfolio-names">Inspiration has no Borders</h2>
+                                <p class="portfolio-discr">Web-site</p> 
                             </div>
                         </a>
                     </li>
@@ -435,12 +490,12 @@
 
                                 <!-- <img class="portfolio-img" src="./images/portfolio/portfolio7.jpg" alt="Видання Limited Edition"> -->
                                 <div class="portfolio-img-thumb-discr">
-                                    <p class="portfolio-descr-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                    <p class="portfolio-descr-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                                 </div>
                             </div>
                             <div class="card-portfolio">
-                                <h2 class="portfolio-names">Видання <span lang="en">Limited Edition</span></h2>
-                                <p class="portfolio-discr">Дизайн</p>
+                                <h2 class="portfolio-names">Limited Edition</h2>
+                                <p class="portfolio-discr">Design</p>
                             </div>
                         </a>
                     </li>
@@ -487,12 +542,12 @@
 <!-- 
                                 <img class="portfolio-img" src="./images/portfolio/portfolio8.jpg" alt="Проєкт LAB"> -->
                                 <div class="portfolio-img-thumb-discr">
-                                    <p class="portfolio-descr-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                    <p class="portfolio-descr-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                                 </div>
                             </div>
                             <div class="card-portfolio">
-                                <h2 class="portfolio-names">Проєкт <span class="portfolio-names-upper" lang="en">lab</span></h2>
-                                <p class="portfolio-discr">Маркетинг</p>
+                                <h2 class="portfolio-names">Project&nbsp;<span class="portfolio-names-upper">lab</span></h2>
+                                <p class="portfolio-discr">Marketing</p>
                             </div>
                         </a>
                     </li>
@@ -539,12 +594,12 @@
 
                                 <!-- <img class="portfolio-img" src="./images/portfolio/portfolio9.jpg" alt="Growing Business"> -->
                                 <div class="portfolio-img-thumb-discr">
-                                    <p class="portfolio-descr-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                    <p class="portfolio-descr-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                                 </div>
                             </div>
                             <div class="card-portfolio">
-                                <h2 class="portfolio-names" lang="en">Growing Business</h2>
-                                <p class="portfolio-discr">Додаток</p>
+                                <h2 class="portfolio-names">Growing Business</h2>
+                                <p class="portfolio-discr">Apps</p>
                             </div>
                         </a>
                     </li>
@@ -564,9 +619,9 @@
                     <address>
                         <ul class="list footer-address-width">
                             <li class="">
-                                <a href="https://goo.gl/maps/Vt5yUV9LtT4k733N8" 
+                                <a href="https://goo.gl/maps/2t3PYtwZCZG3GZG87" 
                                 target="_blank" 
-                                rel="noopener nooferrer" class="link text-addres">м. Київ, пр-т Лесі Українки, 26</a>
+                                rel="noopener nooferrer" class="link text-addres">695 Park Ave, NY 10065, USA</a>
                             </li>
                             <li class="mail-tel">
                                 <a href="mailto:info@devstudio.com" class="link mail-tel-footer">info@devstudio.com</a>                    
@@ -580,7 +635,7 @@
     
                 
                 <div class="margin-footer">
-                    <h2 class="footer-add">Приєднуйтесь</h2>
+                    <h2 class="footer-add">Find us on</h2>
                     <ul class="list social-list-footer">
                         <li class="social-list-icons-footer">
                             <a href="" class="social-list-link-footer">
@@ -617,7 +672,7 @@
 
 
             <div class="margin-footer-form">
-                <h2 class="footer-add">Підпишіться на розсилку</h2>
+                <h2 class="footer-add">Subscribe to the newsletter</h2>
 
                 <form>
                     <div class="form-signup-footer">
