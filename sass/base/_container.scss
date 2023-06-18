@@ -1,8 +1,6 @@
 .container {
     padding-left: 15px;
     padding-right: 15px;
-
-    // background-color: yellow;
 }
 
 .section {
@@ -15,23 +13,18 @@
         width: 480px;
         margin-left: auto;
         margin-right: auto;
-
-        // background-color: orange;
     }
 }
 
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
-        // background-color: lime;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .container {
         width: 1200px;
-
-        // background-color: aqua;
     }
 
     .section {
