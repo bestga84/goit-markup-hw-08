@@ -14,55 +14,10 @@
 
 <body class="body">
     <header class="header-bg-color">
-
         <div class="container header-container">
             <a href="./index.html" class="link logo logo-margin"><span class="logo-part">Web</span>Studio</a>
             <button type="button" class="mobile-menu-btn js-open-menu" aria-expanded="false"
             aria-controls="mobile-menu">
-                <svg class="mobile-menu-btn__icon" width="40" height="40">
-                    <use href="./images/icons.svg#icon-menu-burger"></use>
-                </svg>
-            </button>
-            <nav>
-                <ul class="list navigation-list">
-                    <li class="nav-list-item">
-                        <a href="./index.html" class="link nav-list-link nav-base-text current menu-link">Studio</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="./portfolio.html" class="link nav-list-link nav-base-text nav-text">Portfolio</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="" class="link nav-list-link nav-base-text nav-text">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="list navigation-list-contact">
-                <li class="list-item-nav">
-                    <a href="mailto:info@devstudio.com" class="link nav-list-link mail-tel-text">
-                        <svg width="16" height="12" class="nav-icon">
-                            <use href="./images/icons.svg#icon-email"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="nav-right">
-                    <a href="tel:+12127724150" class="link nav-list-link mail-tel-text contact-number">
-                        <svg width="10" height="16" class="nav-icon">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +1 212-772-4150
-                    </a>
-                </li>
-            </ul>     
-        </div>
-
-       
-    </header>
-
-    <!-- <header class="header-bg-color">
-        <div class="container header-container">
-            <a href="./index.html" class="link logo logo-margin"><span class="logo-part">Web</span>Studio</a>
-            <button type="button" class="mobile-menu-btn js-open-menu">
                 <svg class="mobile-menu-btn__icon" width="40" height="40">
                     <use href="./images/icons.svg#icon-menu-burger"></use>
                 </svg>
@@ -100,7 +55,61 @@
             </ul>     
         </div>
 
-    </header> -->
+        <!-- Мобільне меню -->
+        <!-- <div class="mobile-menu container js-menu-container" js-menu-container>
+            <button type="button" class="mobile-menu-btn mobile-menu-btn-close js-close-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu" js-close-menu>
+                <svg class="mobile-menu-btn__icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu__container">
+                <nav class="mobile-menu__nav">
+                    <ul class="list mobile-menu__list">
+                        <li class="mobile-menu__nav-item">
+                            <a href="./index.html" class="link nav-list-link mobile-menu__nav-text current">Studio</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="./portfolio.html" class="link nav-list-link mobile-menu__nav-text nav-text">Portfolio</a>
+                        </li>
+                        <li class="nav-list-item2">
+                            <a href="" class="link nav-list-link mobile-menu__nav-text nav-text">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <ul class="list mobile-menu__contact">
+                    <li class="mobile-menu__contact-item">
+                        <a href="tel:+12127724150" class="link mobile-menu__contact-tel nav-list-link2 mail-tel-text2 contact-number2">
+                            +1 212-772-4150
+                        </a>
+                    </li>
+                    <li class="mobile-menu__contact-item">
+                        <a href="mailto:info@devstudio.com" class="link mobile-menu__contact-mail nav-list-link2 mail-tel-text2">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="list mobile-menu__social">
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="link mobile-menu__social-link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="link mobile-menu__social-link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="link mobile-menu__social-link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="link mobile-menu__social-link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>           
+        </div> -->
+
+    </header>
 
 
     <main class="portfolio-bg-color">
@@ -601,65 +610,6 @@
     </main>
 
     
-
-    <!-- Мобільне меню -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="mobile-menu-btn mobile-menu-btn-close js-close-menu">
-        <svg class="mobile-menu-btn__icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-menu-close"></use>
-        </svg>
-        </button>
-
-        <div class="mobile-menu__container">
-            
-            <nav class="mobile-menu__nav">
-                <ul class="list mobile-menu__list">
-                    <li class="mobile-menu__nav-item">
-                        <a href="./index.html" class="link nav-list-link mobile-menu__nav-text current">Studio</a>
-                    </li>
-                    <li class="mobile-menu__nav-item">
-                        <a href="./portfolio.html" class="link nav-list-link mobile-menu__nav-text nav-text">Portfolio</a>
-                    </li>
-                    <li class="nav-list-item2">
-                        <a href="" class="link nav-list-link mobile-menu__nav-text nav-text">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
-    
-            <div class="mobile-menu__position">
-                <ul class="list mobile-menu__contact">
-                    <li class="mobile-menu__contact-item">
-                        <a href="tel:+12127724150" class="link mobile-menu__contact-tel nav-list-link2 mail-tel-text2 contact-number2">
-                            +1 212-772-4150
-                        </a>
-                    </li>
-                    <li class="mobile-menu__contact-item">
-                        <a href="mailto:info@devstudio.com" class="link mobile-menu__contact-mail nav-list-link2 mail-tel-text2">
-                            info@devstudio.com
-                        </a>
-                    </li>
-                </ul>
-                
-
-                <ul class="list mobile-menu__social">
-                    <li class="mobile-menu__social-item">
-                        <a href="" class="link mobile-menu__social-link">Instagram</a>
-                    </li>
-                    <li class="mobile-menu__social-item">
-                        <a href="" class="link mobile-menu__social-link">Twitter</a>
-                    </li>
-                    <li class="mobile-menu__social-item">
-                        <a href="" class="link mobile-menu__social-link">Facebook</a>
-                    </li>
-                    <li class="mobile-menu__social-item">
-                        <a href="" class="link mobile-menu__social-link">LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
-        </div>           
-    </div>
-
-
     <footer class="footer-color footer-padding">
         <div class="container container-footer">
 
@@ -743,6 +693,66 @@
 
 
 
+
+
+
+        <!-- Мобільне меню -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="mobile-menu-btn mobile-menu-btn-close js-close-menu">
+            <svg class="mobile-menu-btn__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+            </button>
+    
+            <div class="mobile-menu__container">
+                
+                <nav class="mobile-menu__nav">
+                    <ul class="list mobile-menu__list">
+                        <li class="mobile-menu__nav-item">
+                            <a href="./index.html" class="link nav-list-link mobile-menu__nav-text current">Studio</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="./portfolio.html" class="link nav-list-link mobile-menu__nav-text nav-text">Portfolio</a>
+                        </li>
+                        <li class="nav-list-item2">
+                            <a href="" class="link nav-list-link mobile-menu__nav-text nav-text">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <div class="mobile-menu__position">
+                    <ul class="list mobile-menu__contact">
+                        <li class="mobile-menu__contact-item">
+                            <a href="tel:+12127724150" class="link mobile-menu__contact-tel nav-list-link2 mail-tel-text2 contact-number2">
+                                +1 212-772-4150
+                            </a>
+                        </li>
+                        <li class="mobile-menu__contact-item">
+                            <a href="mailto:info@devstudio.com" class="link mobile-menu__contact-mail nav-list-link2 mail-tel-text2">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    
+    
+                    <ul class="list mobile-menu__social">
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="link mobile-menu__social-link">Instagram</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="link mobile-menu__social-link">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="link mobile-menu__social-link">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="link mobile-menu__social-link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>           
+        </div>
+
     <!-- <footer class="footer-color footer-padding">
         <div class="container container-footer">
             <div class="">
@@ -817,5 +827,8 @@
             </div>
         </div>
     </footer> -->
+
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
