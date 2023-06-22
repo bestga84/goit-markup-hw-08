@@ -207,7 +207,8 @@ ol {
 }
 
 .portfolio-hover {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-hover:hover, .portfolio-hover:focus {
@@ -280,7 +281,13 @@ ol {
   .container-portfolio {
     display: flex;
     flex-wrap: wrap;
+  }
+  .portfolio-hover {
+    display: flex;
+  }
+  .portfolio-hover > .card-portfolio {
     flex-grow: 1;
+    background-color: yellow;
   }
   .portfolio-img {
     width: 354px;
