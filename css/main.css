@@ -844,7 +844,7 @@ ol {
   background-color: var(--hero-footer-color);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .hero-padding {
