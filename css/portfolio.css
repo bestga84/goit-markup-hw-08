@@ -280,6 +280,7 @@ ol {
   .container-portfolio {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
   }
   .portfolio-img {
     width: 354px;
@@ -684,7 +685,8 @@ ol {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   z-index: 999;
   opacity: 0;
-  transition: opacity 250ms ease-in-out;
+  transform: translateX(300%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-height: 796px) {
@@ -694,6 +696,7 @@ ol {
 }
 .menu-container.is-open {
   opacity: 1;
+  transform: translateX(50%);
 }
 
 @media screen and (min-width: 480px) {
