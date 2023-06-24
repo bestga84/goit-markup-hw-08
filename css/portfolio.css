@@ -284,10 +284,11 @@ ol {
   }
   .portfolio-hover {
     display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   .portfolio-hover > .card-portfolio {
     flex-grow: 1;
-    background-color: yellow;
   }
   .portfolio-img {
     width: 354px;
@@ -307,6 +308,9 @@ ol {
   }
   .container-portfolio > .portfolio-item:nth-child(n+3) {
     margin-top: 30px;
+  }
+  .portfolio-discr {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {

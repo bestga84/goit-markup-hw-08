@@ -41,9 +41,6 @@
     }
 }
 
-// .portfolio-hover > .card-portfolio {
-//     flex-grow: 2;
-// }
 
 .portfolio-img-thumb {
     position: relative;
@@ -131,11 +128,12 @@
 
     .portfolio-hover {
         display: flex;
+        flex-direction: column;
+        height: 100%;
     }
 
     .portfolio-hover > .card-portfolio {
         flex-grow: 1;
-        background-color: yellow;
     }
 
     .portfolio-img {
@@ -165,6 +163,9 @@
         }
     }
 
+    .portfolio-discr {
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (min-width: 1200px) {
