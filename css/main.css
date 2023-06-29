@@ -965,6 +965,9 @@ ol {
   .section-about__item:not(:nth-child(2n)) {
     margin-right: 30px;
   }
+  .section-about__item:nth-child(3) {
+    padding-bottom: 60px;
+  }
   .section-about__icon {
     width: 354px;
   }
@@ -981,6 +984,15 @@ ol {
   }
   .section-about__item:not(:nth-child(4n)) {
     margin-right: 30px;
+  }
+  .section-about__item:not(:last-child) {
+    padding-bottom: 0;
+  }
+  .section-about__item:nth-child(3) {
+    padding-bottom: 0;
+  }
+  .section-about__item:last-child {
+    padding-bottom: 0;
   }
   .section-about__icon {
     width: 270px;
