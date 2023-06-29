@@ -866,10 +866,12 @@ ol {
 }
 @media screen and (min-width: 1200px) {
   .hero-background {
-    width: 1600px;
-    height: 600px;
+    max-width: 1600px;
+    max-height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop.jpg");
     background-size: 1600px 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero-padding {
     padding-top: 200px;
