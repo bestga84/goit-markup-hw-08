@@ -534,7 +534,7 @@ ol {
 .nav-text,
 .mail-tel-text {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -641,12 +641,28 @@ ol {
   color: var(--second-color-font);
 }
 .mobile-menu__social-item:not(:first-child) {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 .mobile-menu__social-item:not(:last-child)::after {
   content: "";
   border: 1px solid rgba(33, 33, 33, 0.2);
-  margin-left: 10px;
+  margin-left: 5px;
+}
+@media screen and (min-width: 290px) {
+  .mobile-menu__social-item:not(:first-child) {
+    margin-left: 8px;
+  }
+  .mobile-menu__social-item:not(:last-child)::after {
+    margin-left: 8px;
+  }
+}
+@media screen and (min-width: 310px) {
+  .mobile-menu__social-item:not(:first-child) {
+    margin-left: 10px;
+  }
+  .mobile-menu__social-item:not(:last-child)::after {
+    margin-left: 10px;
+  }
 }
 
 .mobile-menu__social-link {
