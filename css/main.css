@@ -290,7 +290,7 @@ ol {
 }
 
 .contact-form-title {
-  margin-bottom: 12px;
+  margin-bottom: 26px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -437,10 +437,19 @@ ol {
   text-decoration: underline;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 580px;
+  }
+  .contact-form-title {
+    margin-bottom: 12px;
   }
   .contact-form-checkbox-wrapper {
     margin-left: 12px;
