@@ -376,7 +376,6 @@ ol {
 .contact-form-checkbox-label {
   display: flex;
   align-items: center;
-  margin-left: 9px;
 }
 
 .contact-form-checkbox-text {
@@ -441,7 +440,7 @@ ol {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 297px) {
+@media screen and (min-width: 289px) {
   .modal {
     height: 648px;
   }
@@ -451,7 +450,7 @@ ol {
     height: 626px;
   }
 }
-@media screen and (min-width: 447px) {
+@media screen and (min-width: 441px) {
   .modal {
     height: 612px;
   }
@@ -459,7 +458,6 @@ ol {
 @media screen and (min-width: 450px) {
   .modal {
     width: 450px;
-    height: 612px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -474,6 +472,9 @@ ol {
     margin-left: 12px;
     font-size: 14px;
     line-height: 1.71;
+  }
+  .contact-form-checkbox-label {
+    margin-left: 9px;
   }
 }
 /* Кнопка */
