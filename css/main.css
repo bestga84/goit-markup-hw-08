@@ -388,8 +388,8 @@ ol {
   fill: var(--primary-color-font);
   margin-right: 7px;
   border-radius: 2px;
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 15px;
   /* Ховер та фокус на чекбоксі */
 }
 .contact-form-checkbox:checked ~ .contact-form-checkbox-empty {
@@ -415,8 +415,8 @@ ol {
   background-color: var(--second-color-font);
   border-radius: 2px;
   margin-right: 7px;
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 15px;
   /* Ховер та фокус на чекбоксі */
 }
 .contact-form-checkbox:not(:checked) ~ .contact-form-checkbox-check {
