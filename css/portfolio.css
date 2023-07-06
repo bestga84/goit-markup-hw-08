@@ -39,6 +39,12 @@
   padding-bottom: 60px;
 }
 
+.section2 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: yellow;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -56,6 +62,10 @@
     width: 1200px;
   }
   .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section2 {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -193,7 +203,7 @@ ol {
 
 .portfolio-img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -248,6 +258,7 @@ ol {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
+  width: 100%;
 }
 
 .portfolio-names {

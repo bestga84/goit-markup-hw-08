@@ -3,9 +3,23 @@
     padding-right: 15px;
 }
 
+// .section2 {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     min-width: 100%;
+// }
+
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+
+.section2 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: yellow;
 }
 
 @media screen and (min-width: 480px) {
@@ -28,6 +42,11 @@
     }
 
     .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .section2 {
         padding-top: 94px;
         padding-bottom: 94px;
     }
