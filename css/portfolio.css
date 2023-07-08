@@ -197,12 +197,18 @@ ol {
   .btn-flex-portfolio {
     flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 30px;
   }
   .container-btn {
-    width: auto;
+    max-width: 100%;
   }
-  .btn-item-portfolio:not(:nth-child(n+3)) {
+  .btn-item-portfolio:nth-child(-n+3) {
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-flex-portfolio {
+    margin-bottom: 50px;
   }
 }
 .portfolio-bg-color {
