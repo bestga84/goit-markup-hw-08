@@ -93,7 +93,7 @@
 @media screen and (min-width: 1200px) {
 
     .person-location {
-        flex-basis: calc((100% - 30px*3) / 4);
+        flex-basis: calc((100% - 30px * 3) / 4);
     }
 
     .person-location:nth-child(-n + 4) {

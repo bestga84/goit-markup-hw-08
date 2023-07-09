@@ -99,7 +99,6 @@
     }
 
     .footer-address {
-        // padding-bottom: 60px;
         width: 232px;
         margin-left: (76px - 15px);
     }
@@ -108,8 +107,7 @@
         padding-top: 65px;
         margin-right: (89px - 15px);
         text-align: center;
-    }
-    
+    }    
 }
 
 @media screen and (min-width: 1200px) {
@@ -136,7 +134,6 @@
         width: 570px;
     }
 
-
     .form-signup-footer {
         display: flex;     
     }
@@ -156,6 +153,3 @@
         text-align: left;
     }
 }
-
-
-

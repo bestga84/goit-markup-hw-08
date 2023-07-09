@@ -33,12 +33,6 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -55,15 +49,19 @@
   .container {
     width: 1200px;
   }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  .section2 {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
+
 .body {
   color: var(--primary-color-font);
   font-family: var(--primary-font);
@@ -109,12 +107,6 @@ ol {
   margin-left: auto;
   margin-right: auto;
 }
-
-.hero-align {
-  margin-bottom: 30px;
-  max-width: 360px;
-}
-
 @media screen and (min-width: 480px) {
   .hero-text {
     font-size: 24px;
@@ -130,10 +122,18 @@ ol {
     font-size: 44px;
     line-height: 1.36;
   }
+}
+
+.hero-align {
+  margin-bottom: 30px;
+  max-width: 360px;
+}
+@media screen and (min-width: 1200px) {
   .hero-align {
     max-width: 696px;
   }
 }
+
 .hero-btn {
   background-color: var(--second-color-font);
   font-weight: 700;
@@ -263,6 +263,32 @@ ol {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (min-width: 289px) {
+  .modal {
+    height: 648px;
+  }
+}
+@media screen and (min-width: 301px) {
+  .modal {
+    height: 626px;
+  }
+}
+@media screen and (min-width: 441px) {
+  .modal {
+    height: 612px;
+  }
+}
+@media screen and (min-width: 450px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 580px;
+  }
+}
 
 .modal-close-btn {
   position: absolute;
@@ -301,6 +327,11 @@ ol {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color-font);
+}
+@media screen and (min-width: 1200px) {
+  .contact-form-title {
+    margin-bottom: 12px;
+  }
 }
 
 .contact-form-field {
@@ -376,14 +407,22 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 1200px) {
+  .contact-form-checkbox-wrapper {
+    margin-left: 12px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .contact-form-checkbox-label {
   display: flex;
   align-items: center;
 }
-
-.contact-form-checkbox-text {
-  color: var(--paragraph-color-font);
+@media screen and (min-width: 1200px) {
+  .contact-form-checkbox-label {
+    margin-left: 9px;
+  }
 }
 
 /* Іконка */
@@ -444,43 +483,6 @@ ol {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 289px) {
-  .modal {
-    height: 648px;
-  }
-}
-@media screen and (min-width: 301px) {
-  .modal {
-    height: 626px;
-  }
-}
-@media screen and (min-width: 441px) {
-  .modal {
-    height: 612px;
-  }
-}
-@media screen and (min-width: 450px) {
-  .modal {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    height: 580px;
-  }
-  .contact-form-title {
-    margin-bottom: 12px;
-  }
-  .contact-form-checkbox-wrapper {
-    margin-left: 12px;
-    font-size: 14px;
-    line-height: 1.71;
-  }
-  .contact-form-checkbox-label {
-    margin-left: 9px;
-  }
-}
 /* Кнопка */
 .contact-form-submit-btn {
   display: flex;
@@ -576,9 +578,7 @@ ol {
   fill: var(--primary-color-font);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.mobile-menu-btn:hover,
-.mobile-menu-btn:focus {
+.mobile-menu-btn:hover, .mobile-menu-btn:focus {
   fill: var(--second-color-font);
 }
 
@@ -658,9 +658,7 @@ ol {
   fill: var(--primary-color-font);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.mobile-menu-btn-close:hover,
-.mobile-menu-btn-close:focus {
+.mobile-menu-btn-close:hover, .mobile-menu-btn-close:focus {
   fill: var(--second-color-font);
 }
 
@@ -703,12 +701,12 @@ ol {
   letter-spacing: 0.02em;
   color: var(--paragraph-color-font);
 }
-
 @media screen and (min-width: 375px) {
   .mobile-menu__contact-tel {
     font-size: 34px;
   }
 }
+
 .mobile-menu__contact-mail {
   display: inline-block;
   margin-bottom: 64px;
@@ -772,7 +770,6 @@ ol {
   letter-spacing: 0.02em;
   color: var(--second-color-font);
 }
-
 @media screen and (min-width: 342px) {
   .mobile-menu__social-link {
     font-size: 12px;
@@ -793,6 +790,7 @@ ol {
     font-size: 18px;
   }
 }
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -884,12 +882,6 @@ ol {
   background-position: center;
   background-size: cover;
 }
-
-.hero-padding {
-  padding-top: 118px;
-  padding-bottom: 118px;
-}
-
 @media screen and (min-width: 480px) {
   .hero-background {
     width: 100%;
@@ -911,11 +903,19 @@ ol {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.hero-padding {
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
   .hero-padding {
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
+
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero-background {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mobile@2x.jpg");
