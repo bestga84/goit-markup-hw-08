@@ -61,12 +61,63 @@
 
 .portfolio-descr-text {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
+    font-size: 12px;
+    line-height: 1.26;
     letter-spacing: 0.03em;
-    padding: 63px 24px;
+    padding: 10px 10px;
 
     color: var(--hero-color-font);
+
+
+    @media screen and (min-width: 240px) {
+        & {
+            line-height: 1.56;
+        }
+    }
+
+    @media screen and (min-width: 240px) {
+        & {
+            padding: 16px 16px;
+        }
+    }
+
+    @media screen and (min-width: 260px) {
+        & {
+            padding: 20px 20px;
+        }
+    }
+
+    @media screen and (min-width: 280px) {
+        & {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (min-width: 340px) {
+        & {
+            padding: 34px 24px;
+        }
+    }
+
+    @media screen and (min-width: 340px) {
+        & {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width: 380px) {
+        & {
+            padding: 44px 24px;
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (min-width: 480px) {
+        & {
+            font-size: 18px;
+            padding: 63px 24px;
+        }
+    }
 }
 
 .card-portfolio {
