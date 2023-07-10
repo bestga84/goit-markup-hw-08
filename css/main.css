@@ -254,7 +254,7 @@ ol {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 330px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -281,6 +281,11 @@ ol {
 @media screen and (min-width: 450px) {
   .modal {
     width: 450px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    top: 50%;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -21,7 +21,8 @@
   
 .modal {
     position: absolute;
-    top: 50%;
+    // top: 50%;
+    top: 330px;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -35,6 +36,7 @@
     @media screen and (min-width: 289px) {
         & {
             height: 648px;
+            // top: 300px;
         }
     }
     @media screen and (min-width: 301px) {
@@ -50,6 +52,11 @@
     @media screen and (min-width: 450px) {
         & {
             width: 450px;
+        }
+    }
+    @media screen and (min-width: 480px) {
+        & {
+            top: 50%;
         }
     }
     @media screen and (min-width: 1200px) {
