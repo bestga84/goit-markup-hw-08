@@ -198,11 +198,23 @@
     margin-bottom: 32px;
 
     font-weight: 500;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 1.18;
     letter-spacing: 0.02em;
 
     color: var(--paragraph-color-font);
+
+    @media screen and (min-width: 290px) {
+        & {
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (min-width: 320px) {
+        & {
+            font-size: 28px;
+        }
+    }
 
     @media screen and (min-width: 375px) {
         & {
@@ -222,11 +234,22 @@
     margin-bottom: 64px;
 
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.02em;
 
     color: var(--paragraph-color-font);
+
+    @media screen and (min-width: 280px) {
+        & {
+            font-size: 20px;
+        }
+    }
+    @media screen and (min-width: 325px) {
+        & {
+            font-size: 24px;
+        }
+    }
 }
 
 .mobile-menu__contact-item {
