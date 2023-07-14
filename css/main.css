@@ -404,7 +404,6 @@ ol {
 }
 
 .contact-form-title {
-  margin-bottom: 26px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -415,6 +414,16 @@ ol {
 @media screen and (min-width: 1200px) {
   .contact-form-title {
     margin-bottom: 12px;
+  }
+}
+@media screen and (max-height: 590px) {
+  .contact-form-title {
+    margin-bottom: 14px;
+  }
+}
+@media screen and (min-height: 590px) {
+  .contact-form-title {
+    margin-bottom: 26px;
   }
 }
 
@@ -462,7 +471,16 @@ ol {
 
 .contact-form-comment {
   display: block;
-  margin-bottom: 20px;
+}
+@media screen and (max-height: 590px) {
+  .contact-form-comment {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-height: 590px) {
+  .contact-form-comment {
+    margin-bottom: 10px;
+  }
 }
 
 .contact-form-message {
@@ -480,6 +498,21 @@ ol {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (max-height: 504px) {
+  .contact-form-message {
+    height: 40px;
+  }
+}
+@media screen and (min-height: 504px) {
+  .contact-form-message {
+    height: 80px;
+  }
+}
+@media screen and (min-height: 546px) {
+  .contact-form-message {
+    height: 120px;
+  }
 }
 
 .contact-form-checkbox-wrapper {
@@ -572,7 +605,9 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px auto 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -589,6 +624,16 @@ ol {
 }
 .contact-form-submit-btn:hover, .contact-form-submit-btn:focus {
   background: var(--color-btn-form);
+}
+@media screen and (max-height: 590px) {
+  .contact-form-submit-btn {
+    margin-top: 14px;
+  }
+}
+@media screen and (min-height: 590px) {
+  .contact-form-submit-btn {
+    margin-top: 26px;
+  }
 }
 
 /* ==== Початок підписання в футері ==== */
